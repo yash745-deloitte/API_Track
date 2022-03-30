@@ -1,0 +1,94 @@
+{
+	"id": "c75649f4-d9fb-4dc5-9560-b97734325beb",
+	"name": "Mini_Assignment_1",
+	"timestamp": "2022-03-30T13:06:09.575Z",
+	"collection_id": "19938919-ecf18b7a-f79f-45e5-89e5-dcb529a85720",
+	"folder_id": 0,
+	"environment_id": "19938919-bdad685e-c0d4-4bf6-abc2-e71a223c1077",
+	"totalPass": 20,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8e5ced7f-dbfc-4d5a-b177-a10174b84d9f",
+			"name": "2nd Request",
+			"time": 273,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 400ms": true,
+				"Status code is 201": true,
+				"Content-Type is present": true,
+				"Verify the successful creation": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 400ms": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Verify the successful creation": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				277,
+				342,
+				269,
+				260,
+				273
+			],
+			"allTests": [
+				{
+					"Response time is less than 400ms": true,
+					"Status code is 201": true,
+					"Content-Type is present": true,
+					"Verify the successful creation": true
+				},
+				{
+					"Response time is less than 400ms": true,
+					"Status code is 201": true,
+					"Content-Type is present": true,
+					"Verify the successful creation": true
+				},
+				{
+					"Response time is less than 400ms": true,
+					"Status code is 201": true,
+					"Content-Type is present": true,
+					"Verify the successful creation": true
+				},
+				{
+					"Response time is less than 400ms": true,
+					"Status code is 201": true,
+					"Content-Type is present": true,
+					"Verify the successful creation": true
+				},
+				{
+					"Response time is less than 400ms": true,
+					"Status code is 201": true,
+					"Content-Type is present": true,
+					"Verify the successful creation": true
+				}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 1421,
+	"collection": {
+		"requests": [
+			{
+				"id": "8e5ced7f-dbfc-4d5a-b177-a10174b84d9f",
+				"method": "POST"
+			}
+		]
+	}
+}

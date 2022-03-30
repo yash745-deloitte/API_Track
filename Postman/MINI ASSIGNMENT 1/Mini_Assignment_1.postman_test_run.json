@@ -1,0 +1,214 @@
+{
+	"id": "6b6c3785-1195-4452-aea8-617f50ba5f5f",
+	"name": "Mini_Assignment_1",
+	"timestamp": "2022-03-30T13:04:09.282Z",
+	"collection_id": "19938919-ecf18b7a-f79f-45e5-89e5-dcb529a85720",
+	"folder_id": 0,
+	"environment_id": "19938919-bdad685e-c0d4-4bf6-abc2-e71a223c1077",
+	"totalPass": 15,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "dd5669c8-f245-4fdb-9afb-db66fe4a64ae",
+			"name": "1st Request",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 288,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 400ms": true,
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Validate id = 40 and userId = 4": true,
+				"Every user contain title and its type is String": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate id = 40 and userId = 4": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Every user contain title and its type is String": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				288
+			],
+			"allTests": [
+				{
+					"Response time is less than 400ms": true,
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Validate id = 40 and userId = 4": true,
+					"Every user contain title and its type is String": true
+				}
+			]
+		},
+		{
+			"id": "8e5ced7f-dbfc-4d5a-b177-a10174b84d9f",
+			"name": "2nd Request",
+			"url": "https://reqres.in/api/users",
+			"time": 275,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 400ms": true,
+				"Status code is 201": true,
+				"Content-Type is present": true,
+				"Verify the successful creation": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the successful creation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"Response time is less than 400ms": true,
+					"Status code is 201": true,
+					"Content-Type is present": true,
+					"Verify the successful creation": true
+				}
+			]
+		},
+		{
+			"id": "fad95f6f-12bf-4184-985f-323d79a89fef",
+			"name": "3rd Request",
+			"url": "https://reqres.in/api/users/",
+			"time": 275,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 400ms": true,
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"•\tVerify ‘name’ and ‘job’ are updated with “Arun” and “Manager” respectively": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"•\tVerify ‘name’ and ‘job’ are updated with “Arun” and “Manager” respectively": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"Response time is less than 400ms": true,
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"•\tVerify ‘name’ and ‘job’ are updated with “Arun” and “Manager” respectively": true
+				}
+			]
+		},
+		{
+			"id": "6f65c79f-41cf-42bb-af0d-a5c701fac1df",
+			"name": "4th Request",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 410,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 400ms": false,
+				"Content-Type is present": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 400ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				410
+			],
+			"allTests": [
+				{
+					"Response time is less than 400ms": false,
+					"Content-Type is present": true,
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1248,
+	"collection": {
+		"requests": [
+			{
+				"id": "dd5669c8-f245-4fdb-9afb-db66fe4a64ae",
+				"method": "GET"
+			},
+			{
+				"id": "8e5ced7f-dbfc-4d5a-b177-a10174b84d9f",
+				"method": "POST"
+			},
+			{
+				"id": "fad95f6f-12bf-4184-985f-323d79a89fef",
+				"method": "PUT"
+			},
+			{
+				"id": "6f65c79f-41cf-42bb-af0d-a5c701fac1df",
+				"method": "DELETE"
+			}
+		]
+	}
+}
