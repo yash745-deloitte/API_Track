@@ -13,6 +13,7 @@ public class GetClass {
     {
         given().
                 baseUri(url1).
+                header("Content-Type","application/json").
 
         when().
                 get("/posts").
