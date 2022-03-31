@@ -1,4 +1,8 @@
 
+import io.restassured.response.Response;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
@@ -26,13 +30,42 @@ public class GetClass {
     @Test
     public void VerifyGetClass()
     {
-        given().
+        Response response = given().
+                baseUri(url1).
+                header("Content-Type","application/json").
+                when().
+                get("/posts");
+        JSONArray arr = new JSONArray(response.asString());
+        boolean flag = false;
+        for (int i = 0; i < arr.length(); i++)
+        {
+            JSONObject obj = arr.getJSONObject(i);
+            if(obj.get("id").equals(40) &&  obj.get("userId").equals(4)){
+                flag = true;
+            }
+        }
+        Assert.assertTrue(flag);
+
+    }
+    @Test
+    public void verifyGetTitle() {
+        Response response = given().
                 baseUri(url1).
                 when().
                 get("/posts").
                 then().
-                body("userId[39]",equalTo(4))
-                .body(containsString("title"));
+                extract().response();
+
+        JSONArray arr = new JSONArray(response.asString());
+
+        for(int i=0; i<arr.length(); i++) {
+            JSONObject obj = arr.getJSONObject(i);
+            Assert.assertNotNull(obj.get("title"));
+            Object data = obj.get("title");
+            Assert.assertTrue(data instanceof String);
+        }
     }
 
+
 }
+
