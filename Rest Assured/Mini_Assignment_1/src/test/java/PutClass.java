@@ -9,14 +9,16 @@ import static org.hamcrest.Matchers.*;
 
 public class PutClass {
     String url2 = "https://reqres.in/api";
+    File jsonputdata = new File("src//test//resources//putcall.json");
 
     @Test
     public void put_call()
     {
-        File jsonputdata = new File("src//test//resources//putcall.json");
+
         given().
                 baseUri(url2).
                 body(jsonputdata).
+                header("Content-Type","application/json").
 
         when().
                 put("/users").
@@ -30,10 +32,12 @@ public class PutClass {
     {
         given().
               baseUri(url2).
+              body(jsonputdata).
+              header("Content-Type","application/json").
         when().
-              get("/users").
-        then()
-              .body("name",equalTo("Arjun"))
-              .body("job",equalTo("Manager"));
+              put("/users").
+        then().
+                body("name",equalTo("Arun")).
+                body("job",equalTo("Manager"));
     }
 }
