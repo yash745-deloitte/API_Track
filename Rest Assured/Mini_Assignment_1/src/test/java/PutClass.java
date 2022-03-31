@@ -11,7 +11,9 @@ public class PutClass {
     String url2 = "https://reqres.in/api";
     File jsonputdata = new File("src//test//resources//putcall.json");
 
+
     @Test
+
     public void put_call()
     {
 
@@ -27,7 +29,9 @@ public class PutClass {
                 contentType("application/json").
                 statusCode(200);
     }
+
     @Test
+
     public void VerifyPutClass()
     {
         given().

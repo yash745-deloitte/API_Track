@@ -12,6 +12,7 @@ public class GetClass {
     String url1 = "https://jsonplaceholder.typicode.com";
 
     @Test
+
     public void get_call()
 
     {
@@ -28,6 +29,7 @@ public class GetClass {
     }
 
     @Test
+
     public void VerifyGetClass()
     {
         Response response = given().
@@ -47,8 +49,11 @@ public class GetClass {
         Assert.assertTrue(flag);
 
     }
+
     @Test
-    public void verifyGetTitle() {
+
+    public void verifyGetTitle()
+    {
         Response response = given().
                 baseUri(url1).
                 when().
