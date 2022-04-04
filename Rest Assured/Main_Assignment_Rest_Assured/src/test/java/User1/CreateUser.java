@@ -20,7 +20,7 @@ public class CreateUser {
     String user_token;
     JSONObject jsonData;
 
-    Logger logdata = Logger.getLogger(CreateUser.class);
+
 
     @BeforeClass
     public void get_data() throws IOException {
@@ -36,12 +36,13 @@ public class CreateUser {
         fileWriter.write(user.toString());
         fileWriter.flush();
         fileWriter.close();
-        logdata.info("User Created !!");
+
 
     }
 
     @Test(priority = 1)
     public void user_register() {
+
         File user = new File("src\\test\\resources\\user.json");
         String endpoint = "/user/register";
         Response response = given()

@@ -1,106 +1,154 @@
-2022-04-04 13:34:59,207 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://api-nodejs-todolist.herokuapp.com:443
-2022-04-04 13:34:59,293 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to api-nodejs-todolist.herokuapp.com:443
-2022-04-04 13:35:00,495 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2022-04-04 13:35:00,498 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2022-04-04 13:35:00,498 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2022-04-04 13:35:00,499 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2022-04-04 13:35:00,499 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
-2022-04-04 13:35:00,500 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /user/login HTTP/1.1
-2022-04-04 13:35:00,500 DEBUG [main] wire:73 -  >> "POST /user/login HTTP/1.1[\r][\n]"
-2022-04-04 13:35:00,502 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2022-04-04 13:35:00,502 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2022-04-04 13:35:00,503 DEBUG [main] wire:73 -  >> "Content-Length: 55[\r][\n]"
-2022-04-04 13:35:00,503 DEBUG [main] wire:73 -  >> "Host: api-nodejs-todolist.herokuapp.com[\r][\n]"
-2022-04-04 13:35:00,503 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2022-04-04 13:35:00,504 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
-2022-04-04 13:35:00,504 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2022-04-04 13:35:00,505 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2022-04-04 13:35:00,505 DEBUG [main] headers:278 - >> POST /user/login HTTP/1.1
-2022-04-04 13:35:00,505 DEBUG [main] headers:281 - >> Accept: */*
-2022-04-04 13:35:00,505 DEBUG [main] headers:281 - >> Content-Type: application/json
-2022-04-04 13:35:00,506 DEBUG [main] headers:281 - >> Content-Length: 55
-2022-04-04 13:35:00,506 DEBUG [main] headers:281 - >> Host: api-nodejs-todolist.herokuapp.com
-2022-04-04 13:35:00,506 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2022-04-04 13:35:00,506 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
-2022-04-04 13:35:00,506 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2022-04-04 13:35:00,507 DEBUG [main] wire:87 -  >> "{"password":"mittal@2","email":"ymittal2@deloitte.com"}"
-2022-04-04 13:35:01,274 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2022-04-04 13:35:01,276 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
-2022-04-04 13:35:01,276 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2022-04-04 13:35:01,276 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
-2022-04-04 13:35:01,276 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2022-04-04 13:35:01,276 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2022-04-04 13:35:01,277 DEBUG [main] wire:73 -  << "Content-Length: 351[\r][\n]"
-2022-04-04 13:35:01,277 DEBUG [main] wire:73 -  << "Etag: W/"15f-BmINzafPoe1pm39TY5ujI3orruA"[\r][\n]"
-2022-04-04 13:35:01,277 DEBUG [main] wire:73 -  << "Date: Mon, 04 Apr 2022 08:05:01 GMT[\r][\n]"
-2022-04-04 13:35:01,277 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
-2022-04-04 13:35:01,277 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-04 13:35:01,278 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2022-04-04 13:35:01,279 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2022-04-04 13:35:01,279 DEBUG [main] headers:265 - << Server: Cowboy
-2022-04-04 13:35:01,279 DEBUG [main] headers:265 - << Connection: keep-alive
-2022-04-04 13:35:01,279 DEBUG [main] headers:265 - << X-Powered-By: Express
-2022-04-04 13:35:01,279 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2022-04-04 13:35:01,280 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2022-04-04 13:35:01,280 DEBUG [main] headers:265 - << Content-Length: 351
-2022-04-04 13:35:01,280 DEBUG [main] headers:265 - << Etag: W/"15f-BmINzafPoe1pm39TY5ujI3orruA"
-2022-04-04 13:35:01,280 DEBUG [main] headers:265 - << Date: Mon, 04 Apr 2022 08:05:01 GMT
-2022-04-04 13:35:01,280 DEBUG [main] headers:265 - << Via: 1.1 vegur
-2022-04-04 13:35:01,284 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2022-04-04 13:35:01,288 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
-2022-04-04 13:35:01,289 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2022-04-04 13:35:01,330 DEBUG [main] wire:87 -  << "{"user":{"age":21,"_id":"624a9d3285a784001776fb27","name":"Yash Mittal","email":"ymittal2@deloitte.com","createdAt":"2022-04-04T07:24:34.179Z","updatedAt":"2022-04-04T08:05:00.898Z","__v":5},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOWQzMjg1YTc4NDAwMTc3NmZiMjciLCJpYXQiOjE2NDkwNTk1MDB9.AyrDFdS0rfxbltIUt4nnS9TPSJaV44-zjcYCF2B6aZg"}"
-2022-04-04 13:35:01,331 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4fba8eec
-2022-04-04 13:35:01,332 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2022-04-04 13:35:02,014 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://api-nodejs-todolist.herokuapp.com:443
-2022-04-04 13:35:02,015 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to api-nodejs-todolist.herokuapp.com:443
-2022-04-04 13:35:03,049 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2022-04-04 13:35:03,049 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2022-04-04 13:35:03,049 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2022-04-04 13:35:03,050 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
-2022-04-04 13:35:03,050 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /task HTTP/1.1
-2022-04-04 13:35:03,050 DEBUG [main] wire:73 -  >> "POST /task HTTP/1.1[\r][\n]"
-2022-04-04 13:35:03,050 DEBUG [main] wire:73 -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOWQzMjg1YTc4NDAwMTc3NmZiMjciLCJpYXQiOjE2NDkwNTk1MDB9.AyrDFdS0rfxbltIUt4nnS9TPSJaV44-zjcYCF2B6aZg[\r][\n]"
-2022-04-04 13:35:03,051 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2022-04-04 13:35:03,051 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2022-04-04 13:35:03,051 DEBUG [main] wire:73 -  >> "Content-Length: 52[\r][\n]"
-2022-04-04 13:35:03,051 DEBUG [main] wire:73 -  >> "Host: api-nodejs-todolist.herokuapp.com[\r][\n]"
-2022-04-04 13:35:03,051 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2022-04-04 13:35:03,051 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
-2022-04-04 13:35:03,051 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2022-04-04 13:35:03,052 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2022-04-04 13:35:03,052 DEBUG [main] headers:278 - >> POST /task HTTP/1.1
-2022-04-04 13:35:03,052 DEBUG [main] headers:281 - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhOWQzMjg1YTc4NDAwMTc3NmZiMjciLCJpYXQiOjE2NDkwNTk1MDB9.AyrDFdS0rfxbltIUt4nnS9TPSJaV44-zjcYCF2B6aZg
-2022-04-04 13:35:03,052 DEBUG [main] headers:281 - >> Accept: */*
-2022-04-04 13:35:03,052 DEBUG [main] headers:281 - >> Content-Type: application/json
-2022-04-04 13:35:03,052 DEBUG [main] headers:281 - >> Content-Length: 52
-2022-04-04 13:35:03,052 DEBUG [main] headers:281 - >> Host: api-nodejs-todolist.herokuapp.com
-2022-04-04 13:35:03,053 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2022-04-04 13:35:03,053 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
-2022-04-04 13:35:03,053 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2022-04-04 13:35:03,053 DEBUG [main] wire:87 -  >> "{"Task Title":"Gymming","Time":0.041666666666666664}"
-2022-04-04 13:35:03,546 DEBUG [main] wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
-2022-04-04 13:35:03,547 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
-2022-04-04 13:35:03,547 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2022-04-04 13:35:03,547 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
-2022-04-04 13:35:03,547 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2022-04-04 13:35:03,548 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2022-04-04 13:35:03,548 DEBUG [main] wire:73 -  << "Content-Length: 70[\r][\n]"
-2022-04-04 13:35:03,548 DEBUG [main] wire:73 -  << "Etag: W/"46-VMErII9Oi56xBes44mA3Fpswi/Y"[\r][\n]"
-2022-04-04 13:35:03,548 DEBUG [main] wire:73 -  << "Date: Mon, 04 Apr 2022 08:05:03 GMT[\r][\n]"
-2022-04-04 13:35:03,548 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
-2022-04-04 13:35:03,548 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-04 13:35:03,548 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
-2022-04-04 13:35:03,549 DEBUG [main] headers:262 - << HTTP/1.1 400 Bad Request
-2022-04-04 13:35:03,549 DEBUG [main] headers:265 - << Server: Cowboy
-2022-04-04 13:35:03,549 DEBUG [main] headers:265 - << Connection: keep-alive
-2022-04-04 13:35:03,549 DEBUG [main] headers:265 - << X-Powered-By: Express
-2022-04-04 13:35:03,549 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2022-04-04 13:35:03,549 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2022-04-04 13:35:03,549 DEBUG [main] headers:265 - << Content-Length: 70
-2022-04-04 13:35:03,550 DEBUG [main] headers:265 - << Etag: W/"46-VMErII9Oi56xBes44mA3Fpswi/Y"
-2022-04-04 13:35:03,550 DEBUG [main] headers:265 - << Date: Mon, 04 Apr 2022 08:05:03 GMT
-2022-04-04 13:35:03,550 DEBUG [main] headers:265 - << Via: 1.1 vegur
-2022-04-04 13:35:03,550 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2022-04-04 13:35:03,550 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
-2022-04-04 13:35:03,550 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-04-04 18:33:28,715 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://api-nodejs-todolist.herokuapp.com:443
+2022-04-04 18:33:28,802 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to api-nodejs-todolist.herokuapp.com:443
+2022-04-04 18:33:30,031 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-04-04 18:33:30,034 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-04-04 18:33:30,035 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2022-04-04 18:33:30,036 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-04-04 18:33:30,037 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2022-04-04 18:33:30,038 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /user/register HTTP/1.1
+2022-04-04 18:33:30,039 DEBUG [main] wire:73 -  >> "POST /user/register HTTP/1.1[\r][\n]"
+2022-04-04 18:33:30,040 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-04-04 18:33:30,041 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2022-04-04 18:33:30,041 DEBUG [main] wire:73 -  >> "Content-Length: 85[\r][\n]"
+2022-04-04 18:33:30,042 DEBUG [main] wire:73 -  >> "Host: api-nodejs-todolist.herokuapp.com[\r][\n]"
+2022-04-04 18:33:30,042 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-04-04 18:33:30,043 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
+2022-04-04 18:33:30,043 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-04-04 18:33:30,045 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-04-04 18:33:30,045 DEBUG [main] headers:278 - >> POST /user/register HTTP/1.1
+2022-04-04 18:33:30,046 DEBUG [main] headers:281 - >> Accept: */*
+2022-04-04 18:33:30,046 DEBUG [main] headers:281 - >> Content-Type: application/json
+2022-04-04 18:33:30,047 DEBUG [main] headers:281 - >> Content-Length: 85
+2022-04-04 18:33:30,047 DEBUG [main] headers:281 - >> Host: api-nodejs-todolist.herokuapp.com
+2022-04-04 18:33:30,047 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-04-04 18:33:30,048 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2022-04-04 18:33:30,048 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-04-04 18:33:30,049 DEBUG [main] wire:87 -  >> "{"password":"mittal@3","name":"Yash Mittal","email":"ymittal3@deloitte.com","age":21}"
+2022-04-04 18:33:30,589 DEBUG [main] wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2022-04-04 18:33:30,591 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2022-04-04 18:33:30,591 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2022-04-04 18:33:30,592 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2022-04-04 18:33:30,592 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2022-04-04 18:33:30,593 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2022-04-04 18:33:30,593 DEBUG [main] wire:73 -  << "Content-Length: 117[\r][\n]"
+2022-04-04 18:33:30,593 DEBUG [main] wire:73 -  << "Etag: W/"75-8pAcxDMIBFYz9O5jjyA6EsjqTpw"[\r][\n]"
+2022-04-04 18:33:30,594 DEBUG [main] wire:73 -  << "Date: Mon, 04 Apr 2022 13:03:30 GMT[\r][\n]"
+2022-04-04 18:33:30,594 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2022-04-04 18:33:30,595 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-04 18:33:30,596 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2022-04-04 18:33:30,596 DEBUG [main] headers:262 - << HTTP/1.1 400 Bad Request
+2022-04-04 18:33:30,596 DEBUG [main] headers:265 - << Server: Cowboy
+2022-04-04 18:33:30,597 DEBUG [main] headers:265 - << Connection: keep-alive
+2022-04-04 18:33:30,597 DEBUG [main] headers:265 - << X-Powered-By: Express
+2022-04-04 18:33:30,597 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2022-04-04 18:33:30,599 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2022-04-04 18:33:30,601 DEBUG [main] headers:265 - << Content-Length: 117
+2022-04-04 18:33:30,602 DEBUG [main] headers:265 - << Etag: W/"75-8pAcxDMIBFYz9O5jjyA6EsjqTpw"
+2022-04-04 18:33:30,603 DEBUG [main] headers:265 - << Date: Mon, 04 Apr 2022 13:03:30 GMT
+2022-04-04 18:33:30,603 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2022-04-04 18:33:30,610 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2022-04-04 18:33:30,618 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2022-04-04 18:33:30,620 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-04-04 18:33:30,687 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://api-nodejs-todolist.herokuapp.com:443
+2022-04-04 18:33:30,688 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to api-nodejs-todolist.herokuapp.com:443
+2022-04-04 18:33:31,669 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-04-04 18:33:31,670 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-04-04 18:33:31,671 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2022-04-04 18:33:31,671 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-04-04 18:33:31,672 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2022-04-04 18:33:31,672 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /user/login HTTP/1.1
+2022-04-04 18:33:31,673 DEBUG [main] wire:73 -  >> "POST /user/login HTTP/1.1[\r][\n]"
+2022-04-04 18:33:31,673 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-04-04 18:33:31,673 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2022-04-04 18:33:31,674 DEBUG [main] wire:73 -  >> "Content-Length: 55[\r][\n]"
+2022-04-04 18:33:31,674 DEBUG [main] wire:73 -  >> "Host: api-nodejs-todolist.herokuapp.com[\r][\n]"
+2022-04-04 18:33:31,675 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-04-04 18:33:31,675 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
+2022-04-04 18:33:31,676 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-04-04 18:33:31,676 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-04-04 18:33:31,677 DEBUG [main] headers:278 - >> POST /user/login HTTP/1.1
+2022-04-04 18:33:31,678 DEBUG [main] headers:281 - >> Accept: */*
+2022-04-04 18:33:31,678 DEBUG [main] headers:281 - >> Content-Type: application/json
+2022-04-04 18:33:31,679 DEBUG [main] headers:281 - >> Content-Length: 55
+2022-04-04 18:33:31,679 DEBUG [main] headers:281 - >> Host: api-nodejs-todolist.herokuapp.com
+2022-04-04 18:33:31,679 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-04-04 18:33:31,680 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2022-04-04 18:33:31,680 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-04-04 18:33:31,680 DEBUG [main] wire:87 -  >> "{"password":"mittal@3","email":"ymittal3@deloitte.com"}"
+2022-04-04 18:33:32,453 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2022-04-04 18:33:32,454 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2022-04-04 18:33:32,455 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2022-04-04 18:33:32,456 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2022-04-04 18:33:32,456 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2022-04-04 18:33:32,457 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2022-04-04 18:33:32,457 DEBUG [main] wire:73 -  << "Content-Length: 351[\r][\n]"
+2022-04-04 18:33:32,457 DEBUG [main] wire:73 -  << "Etag: W/"15f-NPIcjnNsDdkJZtlSsOZvcwBJjjI"[\r][\n]"
+2022-04-04 18:33:32,458 DEBUG [main] wire:73 -  << "Date: Mon, 04 Apr 2022 13:03:32 GMT[\r][\n]"
+2022-04-04 18:33:32,458 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2022-04-04 18:33:32,459 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-04 18:33:32,459 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2022-04-04 18:33:32,460 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2022-04-04 18:33:32,460 DEBUG [main] headers:265 - << Server: Cowboy
+2022-04-04 18:33:32,460 DEBUG [main] headers:265 - << Connection: keep-alive
+2022-04-04 18:33:32,460 DEBUG [main] headers:265 - << X-Powered-By: Express
+2022-04-04 18:33:32,461 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2022-04-04 18:33:32,461 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2022-04-04 18:33:32,462 DEBUG [main] headers:265 - << Content-Length: 351
+2022-04-04 18:33:32,462 DEBUG [main] headers:265 - << Etag: W/"15f-NPIcjnNsDdkJZtlSsOZvcwBJjjI"
+2022-04-04 18:33:32,463 DEBUG [main] headers:265 - << Date: Mon, 04 Apr 2022 13:03:32 GMT
+2022-04-04 18:33:32,463 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2022-04-04 18:33:32,464 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2022-04-04 18:33:32,464 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2022-04-04 18:33:32,465 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-04-04 18:33:32,515 DEBUG [main] wire:87 -  << "{"user":{"age":21,"_id":"624aebfc85a78400177721d1","name":"Yash Mittal","email":"ymittal3@deloitte.com","createdAt":"2022-04-04T13:00:44.913Z","updatedAt":"2022-04-04T13:03:32.111Z","__v":3},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhZWJmYzg1YTc4NDAwMTc3NzIxZDEiLCJpYXQiOjE2NDkwNzc0MTJ9.3o4iR-fqX_k43dPdGbLWm3LpFEmT2QR3BCyZpGDOx8o"}"
+2022-04-04 18:33:32,517 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@42ed89da
+2022-04-04 18:33:32,518 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-04-04 18:33:33,542 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://api-nodejs-todolist.herokuapp.com:443
+2022-04-04 18:33:33,543 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to api-nodejs-todolist.herokuapp.com:443
+2022-04-04 18:33:34,562 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-04-04 18:33:34,563 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-04-04 18:33:34,563 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-04-04 18:33:34,564 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2022-04-04 18:33:34,565 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /user/me HTTP/1.1
+2022-04-04 18:33:34,566 DEBUG [main] wire:73 -  >> "GET /user/me HTTP/1.1[\r][\n]"
+2022-04-04 18:33:34,568 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2022-04-04 18:33:34,571 DEBUG [main] wire:73 -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhZWJmYzg1YTc4NDAwMTc3NzIxZDEiLCJpYXQiOjE2NDkwNzc0MTJ9.3o4iR-fqX_k43dPdGbLWm3LpFEmT2QR3BCyZpGDOx8o[\r][\n]"
+2022-04-04 18:33:34,572 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-04-04 18:33:34,572 DEBUG [main] wire:73 -  >> "Host: api-nodejs-todolist.herokuapp.com[\r][\n]"
+2022-04-04 18:33:34,573 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-04-04 18:33:34,575 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
+2022-04-04 18:33:34,576 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-04-04 18:33:34,576 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-04-04 18:33:34,577 DEBUG [main] headers:278 - >> GET /user/me HTTP/1.1
+2022-04-04 18:33:34,577 DEBUG [main] headers:281 - >> Content-Type: application/json
+2022-04-04 18:33:34,578 DEBUG [main] headers:281 - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRhZWJmYzg1YTc4NDAwMTc3NzIxZDEiLCJpYXQiOjE2NDkwNzc0MTJ9.3o4iR-fqX_k43dPdGbLWm3LpFEmT2QR3BCyZpGDOx8o
+2022-04-04 18:33:34,578 DEBUG [main] headers:281 - >> Accept: */*
+2022-04-04 18:33:34,579 DEBUG [main] headers:281 - >> Host: api-nodejs-todolist.herokuapp.com
+2022-04-04 18:33:34,579 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-04-04 18:33:34,580 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2022-04-04 18:33:34,580 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-04-04 18:33:35,080 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2022-04-04 18:33:35,081 DEBUG [main] wire:73 -  << "Server: Cowboy[\r][\n]"
+2022-04-04 18:33:35,082 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2022-04-04 18:33:35,082 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2022-04-04 18:33:35,083 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2022-04-04 18:33:35,083 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2022-04-04 18:33:35,084 DEBUG [main] wire:73 -  << "Content-Length: 182[\r][\n]"
+2022-04-04 18:33:35,084 DEBUG [main] wire:73 -  << "Etag: W/"b6-rFOZEC3V7TN+bMP8bEc4x9UTcKs"[\r][\n]"
+2022-04-04 18:33:35,085 DEBUG [main] wire:73 -  << "Date: Mon, 04 Apr 2022 13:03:34 GMT[\r][\n]"
+2022-04-04 18:33:35,085 DEBUG [main] wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2022-04-04 18:33:35,086 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-04 18:33:35,086 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2022-04-04 18:33:35,087 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2022-04-04 18:33:35,087 DEBUG [main] headers:265 - << Server: Cowboy
+2022-04-04 18:33:35,087 DEBUG [main] headers:265 - << Connection: keep-alive
+2022-04-04 18:33:35,088 DEBUG [main] headers:265 - << X-Powered-By: Express
+2022-04-04 18:33:35,088 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2022-04-04 18:33:35,088 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2022-04-04 18:33:35,089 DEBUG [main] headers:265 - << Content-Length: 182
+2022-04-04 18:33:35,089 DEBUG [main] headers:265 - << Etag: W/"b6-rFOZEC3V7TN+bMP8bEc4x9UTcKs"
+2022-04-04 18:33:35,089 DEBUG [main] headers:265 - << Date: Mon, 04 Apr 2022 13:03:34 GMT
+2022-04-04 18:33:35,090 DEBUG [main] headers:265 - << Via: 1.1 vegur
+2022-04-04 18:33:35,091 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2022-04-04 18:33:35,091 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2022-04-04 18:33:35,092 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream

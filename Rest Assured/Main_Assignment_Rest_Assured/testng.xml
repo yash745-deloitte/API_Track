@@ -4,6 +4,7 @@
     <test name= "MainAssignmentTest">
         <classes>
             <class name="User1.CreateUser"/>
+            <class name="User1.LoginUser"/>
         </classes>
     </test>
 </suite>
