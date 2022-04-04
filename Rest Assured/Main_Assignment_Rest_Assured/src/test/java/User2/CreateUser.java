@@ -8,6 +8,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.log4testng.Logger;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -19,6 +20,7 @@ public class CreateUser {
     String url = "https://api-nodejs-todolist.herokuapp.com";
     String user_token;
     JSONObject jsonData;
+    Logger logdata = Logger.getLogger(CreateUser.class);
 
     @BeforeClass
     public void get_data() throws IOException {

@@ -7,6 +7,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+import org.testng.log4testng.Logger;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -18,6 +19,7 @@ public class ValidateTasks {
     String url = "https://api-nodejs-todolist.herokuapp.com";
     String user_token;
     JSONObject jsonData;
+    Logger logdata = Logger.getLogger(ValidateTasks.class);
 
     @BeforeSuite
     public void setup() throws IOException {
@@ -64,6 +66,7 @@ public class ValidateTasks {
         Assert.assertEquals(response.getStatusCode(),200);
         Assert.assertEquals(response.getContentType(),"application/json; charset=utf-8");
         Assert.assertEquals(response.body().path("count").toString(),Integer.toString(20));
+        logdata.info("Validation Of tasks Done!!");
 
         //Validate Task Description
         JSONArray tasks = jsonData.getJSONArray("Sheet3");
@@ -74,6 +77,7 @@ public class ValidateTasks {
             JSONObject a_task = tasks.getJSONObject(i);
             JSONObject tsk = newArray.getJSONObject(i);
             Assert.assertEquals(tsk.get("description").toString(),a_task.get("description").toString());
+            logdata.info("Description of tasks validated. !!");
         }
     }
 }

@@ -7,6 +7,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+import org.testng.log4testng.Logger;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -18,6 +19,7 @@ public class LoginUser {
     String url = "https://api-nodejs-todolist.herokuapp.com";
     String user_token;
     JSONObject jsonData;
+    Logger logdata = Logger.getLogger(LoginUser.class);
 
     @BeforeSuite
     public void setup() throws IOException {
@@ -49,6 +51,7 @@ public class LoginUser {
         Assert.assertEquals(response.getStatusCode(),200);
         Assert.assertEquals(response.getContentType(),"application/json; charset=utf-8");
         user_token = response.body().path("token");
+        logdata.info("Login Successful !!");
     }
 
 
@@ -64,5 +67,6 @@ public class LoginUser {
                 .then().extract().response();
         Assert.assertEquals(response.getStatusCode(),200);
         Assert.assertEquals(response.getContentType(),"application/json; charset=utf-8");
+        logdata.info("Token Login Authorized !!");
     }
 }

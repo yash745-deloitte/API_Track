@@ -1,5 +1,6 @@
 package User4;
 
+import User1.CreateUser;
 import User1.DataEntry;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -8,6 +9,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+import org.testng.log4testng.Logger;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -19,6 +21,7 @@ public class AddTask {
     String url = "https://api-nodejs-todolist.herokuapp.com";
     String user_token;
     JSONObject jsonData;
+    Logger logdata = Logger.getLogger(AddTask.class);
 
     @BeforeSuite
     public void setup() throws IOException {

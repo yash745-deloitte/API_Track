@@ -7,6 +7,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+import org.testng.log4testng.Logger;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -18,6 +19,7 @@ public class ValidateUserDetails {
     String url = "https://api-nodejs-todolist.herokuapp.com";
     String user_token;
     JSONObject jsonData;
+    Logger logdata = Logger.getLogger(ValidateUserDetails.class);
 
     @BeforeSuite
     public void setup() throws IOException {
@@ -70,5 +72,6 @@ public class ValidateUserDetails {
         Assert.assertEquals(user.get("email"), response.body().path("email"));
         Assert.assertEquals(user.get("name"), response.body().path("name"));
         Assert.assertEquals(Integer.toString(user.getInt("age")) ,Integer.toString(response.body().path("age")));
+        logdata.info("Validation User Details Done !!");
     }
 }
